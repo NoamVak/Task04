@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
         if (eT2.getText().toString().matches("")||tv2.getText().toString().equals("")){
             Toast.makeText(this, "ilegal action, try again", Toast.LENGTH_SHORT).show();
             eT2.getText().clear();
+            iv2.setImageDrawable(null);
         }
         else {
             counter1++;
@@ -95,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         if (eT3.getText().toString().matches("")||tv3.getText().toString().equals("")){
             Toast.makeText(this, "ilegal action, try again", Toast.LENGTH_SHORT).show();
             eT3.getText().clear();
+            iv3.setImageDrawable(null);
         }
         else {
             counter1++;
@@ -108,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
             }
             counter3=(counter2/counter1)*100;
             Toast.makeText(this,(int)counter3+"%"+" "+","+(int)counter2+"/3",Toast.LENGTH_SHORT).show();
+            btn3.setClickable(false);
         }
     }
 
