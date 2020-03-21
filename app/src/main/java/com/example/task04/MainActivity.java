@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
         if (eT2.getText().toString().matches("")||tv2.getText().toString().equals("")){
             Toast.makeText(this, "ilegal action, try again", Toast.LENGTH_SHORT).show();
             eT2.getText().clear();
-            uAnswer2=0;
             iv2.setImageDrawable(null);
         }
         else {
@@ -97,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
         if (eT3.getText().toString().matches("")||tv3.getText().toString().equals("")){
             Toast.makeText(this, "ilegal action, try again", Toast.LENGTH_SHORT).show();
             eT3.getText().clear();
-            uAnswer3=0;
             iv3.setImageDrawable(null);
         }
         else {
