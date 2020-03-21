@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView iv1,iv2,iv3;
     EditText eT,eT2,eT3;
     int num1=rnd.nextInt(90)+10,num2=rnd.nextInt(90)+10;
-    int uAnswer=1,uAnswer2=1,uAnswer3=1;
+    int uAnswer,uAnswer2,uAnswer3;
     int num3,num4;
     float counter1=0,counter2=0,counter3;
 
@@ -69,8 +69,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void Check2(View view) {
-        if (eT2.getText().toString().matches("")){
+        if (eT2.getText().toString().matches("")||tv2.getText().toString().equals("")){
             Toast.makeText(this, "ilegal action, try again", Toast.LENGTH_SHORT).show();
+            eT2.getText().clear();
         }
         else {
             counter1++;
@@ -91,8 +92,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Check3(View view) {
-        if (eT3.getText().toString().matches("")){
+        if (eT3.getText().toString().matches("")||tv3.getText().toString().equals("")){
             Toast.makeText(this, "ilegal action, try again", Toast.LENGTH_SHORT).show();
+            eT3.getText().clear();
         }
         else {
             counter1++;
